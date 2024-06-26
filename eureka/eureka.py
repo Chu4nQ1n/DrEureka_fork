@@ -23,8 +23,7 @@ def main(cfg):
     logging.info(f"Workspace: {workspace_dir}")
     logging.info(f"Project Root: {EUREKA_ROOT_DIR}")
 
-    # openai.api_key = os.getenv("OPENAI_API_KEY")
-    openai.api_key = "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"
+    openai.api_key = os.getenv("OPENAI_API_KEY")
 
     task = cfg.env.task
     task_description = cfg.env.description
